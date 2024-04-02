@@ -22,7 +22,7 @@ class NotificationsScreen extends StatelessWidget {
         return ListTile(
           title: Text(notification.title),
           subtitle: Text(notification.body),
-          leading: notification.imageUrl != null ? Image.network(notification.imageUrl!, width: 25, height: 25) : null,
+          leading: notification.imageUrl != null ? Image.network(notification.imageUrl!, width: 100, height: 100) : null,
           onTap: (){
             context.push('/notification-details/${notification.messageId}');
           },

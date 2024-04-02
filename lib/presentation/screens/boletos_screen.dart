@@ -11,29 +11,38 @@ class BotelosScreen extends StatefulWidget {
 class _BotelosScreenState extends State<BotelosScreen> {
   List<Map<String, String>> boletos = [
     {
-      'vehiculo': 'Autobús',
-      'ruta': 'Ruta 1',
+      'vehiculo': 'AUT101',
+      'ruta': 'CDMX - Veracruz',
       'horaSalida': '08:00 AM',
       'horaLlegada': '10:00 AM',
-      'status': 'Reservado',
+      'status': 'Vigente',
       'numeroAsiento': 'A1',
       'puertaAbordaje': 'A1'
     },
     {
-      'vehiculo': 'Tren',
-      'ruta': 'Ruta 2',
+      'vehiculo': 'AUT114',
+      'ruta': 'CDMX - Puebla',
       'horaSalida': '10:30 AM',
       'horaLlegada': '12:30 PM',
-      'status': 'Confirmado',
+      'status': 'Abordando',
       'numeroAsiento': 'B3',
       'puertaAbordaje': 'B1'
     },
     {
-      'vehiculo': 'Avión',
-      'ruta': 'Ruta 3',
+      'vehiculo': 'AUT102',
+      'ruta': 'Guadalajara - Monterrey',
       'horaSalida': '01:00 PM',
       'horaLlegada': '04:00 PM',
       'status': 'Cancelado',
+      'numeroAsiento': 'C5',
+      'puertaAbordaje': 'A1'
+    },
+    {
+      'vehiculo': 'AUT103',
+      'ruta': 'Orizaba - Puebla',
+      'horaSalida': '01:00 PM',
+      'horaLlegada': '04:00 PM',
+      'status': 'Finalizado',
       'numeroAsiento': 'C5',
       'puertaAbordaje': 'A1'
     },

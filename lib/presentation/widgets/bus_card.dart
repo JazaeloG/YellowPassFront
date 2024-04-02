@@ -28,9 +28,9 @@ class BusCard extends StatelessWidget {
     switch (status.toLowerCase()) {
       case 'cancelado':
         return Colors.red;
-      case 'pendiente de salida':
-        return Colors.orange;
-      case 'en camino':
+      case 'abordando':
+        return const Color.fromARGB(255, 0, 183, 255);
+      case 'vigente':
         return Colors.green;
       default:
         return Colors.black; 
@@ -104,6 +104,13 @@ class BusCard extends StatelessWidget {
                       color: _getColorByStatus(status),
                     ),
                   ),
+                  Text(
+                          'Puerta \n $puertaAbordaje',
+                          style: const TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                          ),
+                  ),
                   Column(
                     children: [
                       const Icon(Icons.airline_seat_recline_normal, size: 16),
@@ -118,18 +125,8 @@ class BusCard extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 8),
-                      Center(
-                        child: Text(
-                          'Puerta \n $puertaAbordaje',
-                          style: const TextStyle(
-                            fontSize: 14,
-                            color: Colors.black,
-                          ),
-                        ),
-                      )
                     ],
                   ),
-  
                 ],
               ),
               const SizedBox(height: 8),
