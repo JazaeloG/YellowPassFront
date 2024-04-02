@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_login/flutter_login.dart';
 import 'package:go_router/go_router.dart';
 import 'package:yellow_pass/infraestructure/services/auth_service.dart';
+
+import '../../infraestructure/bloc/notifications_bloc.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -29,6 +32,8 @@ class LoginScreen extends StatelessWidget {
         return authService.recoverPassword(email);
       },
       onSubmitAnimationCompleted: () {
+        context.read<NotificationsBloc>()
+              .requestPermission();
         context.go('/home');
       },
       passwordValidator: (value) {
