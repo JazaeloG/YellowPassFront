@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "159448260362",
+    "project_id": "guadalajara-17336",
+    "storage_bucket": "guadalajara-17336.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159448260362:android:3a0fa7282e9bdf84dde4f3",
+        "android_client_info": {
+          "package_name": "com.example.yellow_pass"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpETqx1aI70oclYcWAXhznubTM0sAj_tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159448260362:android:fe5003880ad93eafdde4f3",
+        "android_client_info": {
+          "package_name": "com.halconcode.yellow_pass"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpETqx1aI70oclYcWAXhznubTM0sAj_tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
